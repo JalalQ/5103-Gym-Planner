@@ -1,0 +1,105 @@
+/*== Pet Project ==*/
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body{
+	background: tan;
+    margin: 1em 5em;
+}
+
+.page-wrapper {
+  max-width:650px;
+  margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #621708;
+    font-family:'gadugi', serif;
+    text-align: center;
+}
+
+#random-motivation {
+    width: 650px;
+}
+
+.button {
+    font-weight: bold;
+    font-size:1.15em;
+    margin:0;
+    text-decoration: none;
+    border-radius: 10px;
+    border:solid; 
+    padding: 0.4em 0.8em;
+    display: block;
+    float: right;
+}
+
+#startButton {
+    background-color: #023618;
+    color:#F6FEDB;
+    border-color: #EAEBED;
+}
+
+#refreshButton {
+    background-color: #BC3908;
+    color:#220901;
+    border-color: #F6AA1C;
+}
+
+#exeriseButton {
+    font-size: 1.3em;
+    margin-right: 70px;
+    background-color: #386C0B;
+    color:#FAFF70;
+    border-color: #BAAB68;
+}
+
+#listSubmit {
+    float: left;
+    width:100%;
+}
+
+
+p {
+    font-size: 1.2em;
+    color:#220901;
+    font: normal 1.2em 'gadugi', sans-serif;
+}
+
+#quote {
+    font-size: 1.25em;
+    font-style: italic;
+}
+    
+.input-sets {
+    background-color:#C4EBC8;
+    width: 195px;
+    margin-left:60px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#history {
+    margin-top: 80px;
+}
+
+.list {
+    float: left;
+    width: 100%;
+}
+
+.col-50 {
+    width: 49%;
+    float: left;
+}
+
+.eximages {
+    width:200px;
+    margin-left:60px;
+}
+
+.exicon {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,113 @@
+﻿<!-- 
+The HTML component of the Pet Project Assignment completed by:
+Jalaluddin Qureshi, Humber College, Fall 2020. Student #N01457503.
+
+In this project the app stores data about the list of exercise
+completed by a user, so that the user can keep track of the exercises
+
+-->
+<!doctype html>
+<html lang="en">
+    <body>
+        
+        <head>
+            <!--Separation of Concerns-->
+            <script type="text/javascript" src="javascript/jquery-3.5.1.js"></script>
+            <script type="text/javascript" src="javascript/petproject.js" ></script>
+            <link rel="stylesheet" href="css/style.css" />
+            <meta charset="utf-8" />
+            <title>Gym Fitness Planner</title>
+        </head>
+        <div class="page-wrapper">
+            <main>
+                <h1>Gym Fitness Planner</h1>
+                <div id="welcome">
+                    <div id="introduction">
+                        <p><img id="random-motivation" alt="Motivational Quote Poster"></p>
+                        <blockquote id="quote">"The woods are dark and green, but I have miles to go before I sleep."</blockquote>
+                        <p>Today it is <span id="todayDate"></span>. Click on the start button to record the list
+                        of exercise you have completed in your recent session.</p>
+                    </div>
+                    <div><input type="submit" value="Start" id="startButton" class="button"></div>
+
+                <div id="history">
+                    <h2>Record of your exercise <span id="firstDay"></span></h2>
+                    <p id="noexercise">You have not completed any fitness session yet.</p>
+                    <p id="ex1Count"></p>
+                    <p id="ex2Count"></p>
+                    <p id="ex3Count"></p>
+                    <p id="ex4Count"></p>
+                    <p id="ex5Count"></p>
+                    <p id="ex6Count"></p>
+                </div>
+                    <div><input type="submit" value="Refresh History" id="refreshButton" class="button"></div>
+                </div>
+
+                <!-- 
+                The following is showed on the "next page". It list all the exercises.
+                -->
+                <div id="list">
+                    
+                    <h2>Click on the icon of the exercise which you have performed, and then 
+                    enter the number of sets completed.</h2>
+                    
+                    <div id="listSubmit">
+                        <input type="submit" value="Save Record" id="exeriseButton" class="button">
+                        </div>
+                    
+                    <div>
+                        <form name="infoForm" action="#" method="get">
+                           
+                            <div class="col-50">
+                                <div class="exicon">
+                                    <h3>Weighted Step-up</h3>
+                                    <img src="images/step.jpg" id="ex1" class="eximages">
+                                    <input type="number" id="ex1-input" class="input-sets" placeholder="0">
+                                </div>
+
+                                <div class="exicon">
+                                    <h3>Renegade Row</h3>
+                                    <img src="images/pushups.jpg" id="ex2"  class="eximages">
+                                    <input type="number" id="ex2-input" class="input-sets" placeholder="0">
+                                </div>
+
+
+                                <div class="exicon">
+                                    <h3>Clean and Jerk</h3>
+                                    <img src="images/cleanjerk.jpg" id="ex3" class="eximages">
+                                    <input type="number" id="ex3-input" class="input-sets" placeholder="0">
+                                </div>
+                            </div>
+
+
+                            <div class="col-50">
+                                <div class="exicon">
+                                    <h3>Biceps Curl</h3>
+                                    <img src="images/bicepcurl.jpg" id="ex4" class="eximages">
+                                    <input type="number" id="ex4-input" class="input-sets" placeholder="0">
+                                </div>
+
+                                <div class="exicon">
+                                    <h3>Farmer's Walk</h3>
+                                    <img src="images/farmerswalk.jpg" id="ex5" class="eximages">
+                                    <input type="number" id="ex5-input" class="input-sets" placeholder="0">
+                                </div>
+
+
+                                <div class="exicon">
+                                    <h3>Shoulder Press</h3>
+                                    <img src="images/shoulderpress.jpg" id="ex6" class="eximages">
+                                    <input type="number" id="ex6-input" class="input-sets" placeholder="0">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </main>
+        </div>
+    </body>
+
+</html>
